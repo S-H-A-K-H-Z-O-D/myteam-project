@@ -1,0 +1,6 @@
+@mixin pseudoElement($width, $height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-size: 100% 100%;
+}
