@@ -1,0 +1,44 @@
+.section4{
+    background-color: #F67E7E;
+    padding: 30px 0;
+    position: relative;
+
+    &::before{
+        @include sec3AfBef(150px, 110px);
+        background: url(/img/psElement6.png) no-repeat;
+        background-size: 100% 100%;
+        bottom: 0;
+    }
+
+    &  h1{
+        font-size: 45px;
+    }
+
+    &__content{
+
+        &__btn{
+            padding-left: 25px;
+            padding-right: 25px;
+            
+            &:hover{
+                background-color:#012F34!important;
+                color: white!important;
+                border: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .section4{
+    
+        &::before{
+            @include sec3AfBef(110px, 70px);
+        }
+    
+        &  h1{
+            font-size: 30px;
+        }
+    }
+}

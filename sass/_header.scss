@@ -16,3 +16,25 @@
         color: white;
     }
 }
+
+@media only screen and (max-width: 768px){
+
+    .nav-item:hover{
+        color: #F67E7E!important;
+    }
+    
+    .head-btn:hover{
+        background-color: white;
+    
+        & > p{
+            color: black;
+        }
+    }
+    
+    .head-btn:active{
+    
+        & > p{
+            color: white;
+        }
+    }
+}

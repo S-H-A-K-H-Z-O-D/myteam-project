@@ -4,8 +4,8 @@
 
     &::before{
         content: "";
-        @include pseudoElement(90px, 210px);
         background: url(/img/psedoelement2.png) no-repeat;
+        @include pseudoElement(90px, 210px);
         right: 0px;
         bottom: 0;
     }
@@ -48,8 +48,8 @@
 
                 &::before{
                     content: "";
-                    @include pseudoElement(60px, 60px);
                     background: url(/img/sec2-ps1.png) no-repeat;
+                    @include pseudoElement(60px, 60px);
                     left: -75px;
                 }
             }
@@ -59,8 +59,8 @@
 
                 &::before{
                     content: "";
-                    @include pseudoElement(60px, 60px);
                     background: url(/img/sec2-ps2.png) no-repeat;
+                    @include pseudoElement(60px, 60px);
                     left: -75px;
                 }
             }
@@ -70,9 +70,64 @@
 
                 &::before{
                     content: "";
-                    @include pseudoElement(60px, 60px);
                     background: url(/img/sec2-ps3.png) no-repeat;
+                    @include pseudoElement(60px, 60px);
                     left: -75px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .section_2{
+    
+        &::before{
+            top: 0;
+        }
+    }
+    
+    .section2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        &__block1{
+    
+            &__title{
+                width: 480px;
+            }
+        }
+    
+        &__block2{
+    
+            &__content{
+                margin-left: 75px;
+    
+                & > p{
+                    width: 550px;
+                }
+    
+                &:nth-child(1){
+    
+                    &::before{
+                        left: -75px;
+                    }
+                }
+    
+                &:nth-child(2){
+    
+                    &::before{
+                        left: -75px;
+                    }
+                }
+    
+                &:nth-child(3){
+    
+                    &::before{
+                        left: -75px;
+                    }
                 }
             }
         }

@@ -1,0 +1,45 @@
+footer{
+    background-color: #002529;
+}
+
+.foot{
+    &__logo{
+        height: 100px;
+
+        &__list a{
+            &:hover{
+                color: #F67E7E!important;
+            }
+        }
+    }
+
+    &__icons{
+        height: 100px;
+    }
+
+    &__list{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .foot-tablet{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .foot{
+        display: flex;
+        flex-direction: column;
+    
+        &__icons{
+            display: flex;
+            flex-direction: row!important;
+            justify-content: space-between!important;
+            width: 100%;
+            height: 40px;
+        }
+    }
+}
