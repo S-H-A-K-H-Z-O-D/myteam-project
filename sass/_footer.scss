@@ -2,6 +2,11 @@ footer{
     background-color: #002529;
 }
 
+.foot-tablet{
+    display: flex;
+    width: 70%;
+}
+
 .foot{
     &__logo{
         height: 100px;
