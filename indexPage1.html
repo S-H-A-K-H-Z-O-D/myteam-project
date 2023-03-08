@@ -15,45 +15,54 @@
     
     <!-- Header -->
      
-    <header class="container d-flex align-items-center mt-4">
+    <header class="container d-flex align-items-center mt-4 head">
 
         <img class="pe-4" src="./img/logo.png" alt="Logo 'myteam'">
 
         <!-- Navbar -->
 
-        <ul class="list-unstyled d-flex align-items-center mb-0">
+        <div class="navMenu">
+            <div class="navMenu__btn"></div>
 
-            <li class="ps-4">
-                <a class="text-light text-decoration-none nav-item" href="#">home</a>
-            </li>
-            <li class="ps-4">
-                <a class="text-light text-decoration-none nav-item" href="#">about</a>
-            </li>
+            <div class="navMenu__block">
+                <ul class="list-unstyled d-flex align-items-center mb-0">
 
-        </ul>
+                    <li class="ps-4">
+                        <a class="text-light text-decoration-none nav-item" href="./index.html" target="_blank">home</a>
+                    </li>
+                    <li class="ps-4">
+                        <a class="text-light text-decoration-none nav-item" href="./indexPage1.html" target="_blank">about</a>
+                    </li>
+        
+                </ul>
+        
+                <a class="btn border text-light rounded-pill ms-auto head-btn" href="./indexPage2.html">
+                    <p class="m-0">contact us</p>
+                </a>
+            </div>
 
-        <a class="btn border text-light rounded-pill ms-auto head-btn">
-            <p class="m-0">contact us</p>
-        </a>
+        </div>
 
     </header>
 
     <!-- Section_1 -->
 
-    <section class="container d-flex justify-content-between section1_P1 my-5">
+    <section class="section1_P1">
 
-        <h1 class="section1__title m-0 text-light ">About</h1>
+        <div class="container d-flex justify-content-between py-5 section1_P1__block">
+            <h1 class="section1_P1__title m-0 text-light ">About</h1>
 
-        <div class="d-flex flex-column justify-content-between description">
-            <div class="description__line"></div>
-            <p class="text-light">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
+            <div class="d-flex flex-column justify-content-between description">
+                <div class="description__line"></div>
+                <p class="text-light">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
+            </div>
         </div>
 
     </section>
 
     <!-- Section_2 -->
 
-    <section class="section2_P1 pt-4 mb-5">
+    <section class="section2_P1 pt-4">
 
         <div class="container">
             <h1 class="text-light text-center pt-5 pb-4">Meet the directors</h1>
@@ -102,6 +111,72 @@
         </div>
 
     </section>
+
+    <!-- Section_3 -->
+
+    <section class="section3_P1">
+
+        <div class="container">
+
+            <h1 class="section3_P1__title text-center mt-0 text-light">Some of our clients</h1>
+            <div class="d-flex justify-content-between align-items-center fs-1 block_logos">
+                <img class="pics" src="./img/logoVerge.png" alt="#">
+                <img class="pics" src="./img/logo-jakarta.png" alt="#">
+                <img class="pics" src="./img/logo-guardian.png" alt="#">
+                <img class="pics" src="./img/logo-techradar.png" alt="#">
+                <img class="pics" src="./img/logo-gadgets.png" alt="#">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Section_4 -->
+
+    <section class="section4">
+
+        <div class="section4__content d-flex justify-content-around align-items-center">
+            <h1>Ready to get started?</h1>
+            <button class="section4__content__btn btn btn-light rounded-pill">Contact us</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container foot d-flex align-items-center py-4">
+
+            <div class="foot-tablet">
+                <div class="foot__logo d-flex flex-column justify-content-between">
+                    <img src="./img/logo.png" alt="#">
+                    <ul class="foot__logo__list d-flex list-unstyled mb-0">
+                        <li><a class="text-decoration-none pe-4 text-light" href="#">home</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">about</a></li>
+                    </ul>
+                </div>
+    
+                <ul class="foot__list list-unstyled text-light ps-5 ms-5 mb-0 d-flex flex-column justify-content-between">
+                    <li>987  Hillcrest Lane</li>
+                    <li>Irvine, CA</li>
+                    <li>California 92714</li>
+                    <li>Call Us : 949-833-7432</li>
+                </ul>
+            </div>
+
+            <div class="foot__icons ms-auto d-flex flex-column justify-content-between align-items-end">
+                <div class="d-flex">
+                    <img src="./img/facebook.svg" alt="#">
+                    <img class="ps-2" src="./img/ppp.svg" alt="#">
+                    <img class="ps-2" src="./img/twitter.svg" alt="#">
+                </div>
+                <p class="text-light text-end mb-0">Copyright 2020. All Rights Reserved</p>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>

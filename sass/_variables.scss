@@ -5,7 +5,7 @@
     background-size: 100% 100%;
 }
 
-@mixin sec3PsElem($pic) {
+@mixin sec3PsElem($pic, $left, $top, $bottom) {
     position: relative;
 
     &::before{
@@ -15,8 +15,8 @@
         height: 70px;
         background: $pic no-repeat;
         background-size: 100% 100%;
-        bottom: -70px;
-        left: 180px;
+        bottom: $bottom;
+        left: $left;
     }
 
     &::after{
@@ -26,8 +26,8 @@
         height: 80px;
         background: url(/img/“\ 2.png) no-repeat;
         background-size: 100% 100%;
-        top: -60px;
-        left: 180px;
+        top: $top;
+        left: $left;
         z-index: -1;
     }
 }
@@ -38,4 +38,15 @@
         width: $width;
         height: $height;
         background-size: 100% 100%;
+}
+
+@mixin contactPs($url) {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background: $url;
+    background-size: 100% 100%;
+    left: 0;
+    top: 20px;
 }

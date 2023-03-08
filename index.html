@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,42 +12,55 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
 
     <!-- Header -->
      
-    <header class="container d-flex align-items-center mt-4">
+    <header class="container d-flex align-items-center mt-4 head">
 
         <img class="pe-4" src="./img/logo.png" alt="Logo 'myteam'">
 
         <!-- Navbar -->
 
-        <ul class="list-unstyled d-flex align-items-center mb-0">
+        <div class="navMenu">
+            <div class="navMenu__btn"></div>
 
-            <li class="ps-4">
-                <a class="text-light text-decoration-none nav-item" href="#">home</a>
-            </li>
-            <li class="ps-4">
-                <a class="text-light text-decoration-none nav-item" href="./indexPage1.html" target="_blank">about</a>
-            </li>
+            <div class="navMenu__block">
+                <ul class="list-unstyled d-flex align-items-center mb-0">
 
-        </ul>
+                    <li class="ps-4">
+                        <a class="text-light text-decoration-none nav-item" href="./index.html" target="_blank">home</a>
+                    </li>
+                    <li class="ps-4">
+                        <a class="text-light text-decoration-none nav-item" href="./indexPage1.html" target="_blank">about</a>
+                    </li>
+        
+                </ul>
+        
+                <a class="btn border text-light rounded-pill ms-auto head-btn" href="./indexPage2.html">
+                    <p class="m-0">contact us</p>
+                </a>
+            </div>
 
-        <a class="btn border text-light rounded-pill ms-auto head-btn">
-            <p class="m-0">contact us</p>
-        </a>
+        </div>  
 
     </header>
 
     <!-- Section_1 -->
 
-    <section class="container d-flex justify-content-between section1 my-5">
+    <section class="section1">
 
-        <h1 class="section1__title m-0 text-light ">Find the best <span>talent</span></h1>
+        <div class="container d-flex justify-content-between my-5 section1__block">
 
-        <div class="d-flex flex-column justify-content-between description">
-            <div class="description__line"></div>
-            <p class="text-light">Finding the right people and building high performing teams can be hard. Most companies aren't tapping into the abundance of global talent. We’re about to change that.</p>
+            <h1 class="section1__title m-0 text-light ">Find the best <span>talent</span></h1>
+
+            <div class="d-flex flex-column justify-content-between description">
+                <div class="description__line"></div>
+                <p class="text-light">Finding the right people and building high performing teams can be hard. Most
+                    companies aren't tapping into the abundance of global talent. We’re about to change that.</p>
+            </div>
+
         </div>
 
     </section>
@@ -60,15 +74,17 @@
                 <div class="section2__block1__line"></div>
                 <h1 class="section2__block1__title mt-5">Build & manage distributed teams like no one else.</h1>
             </div>
-    
+
             <div class="section2__block2 mt-5 me-5">
                 <div class="section2__block2__content">
                     <h5>Experienced Individuals</h5>
-                    <p>Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                    <p>Our network is made up of highly experienced professionals who are passionate about what they do.
+                    </p>
                 </div>
                 <div class="section2__block2__content">
                     <h5>Easy to Implement</h5>
-                    <p>Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                    <p>Our processes have been refined over years of implementation meaning our teams always deliver.
+                    </p>
                 </div>
                 <div class="section2__block2__content">
                     <h5>Enhanced Productivity</h5>
@@ -80,28 +96,36 @@
     </section>
     <!-- Section_3 -->
 
-    <section class="container d-flex flex-column align-items-center my-5 pt-4 pb-5 section3">
+    <section class="section3">
 
-        <h1 class="text-center text-light section3__title">Delivering real results for top companies. Some of our <span>success stories.</span></h1>
+        <div class="container d-flex flex-column align-items-center pt-5 pb-5">
 
-        <div class="d-flex justify-content-around section3__blocks">
-            <div class="text-center px-4 text-light block">
-                <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-                <h5>Kady Baker</h5>
-                <p>Product Manager at Bookmark</p>
+            <h1 class="text-center text-light section3__title">Delivering real results for top companies. Some of our
+                <span>success stories.</span></h1>
+    
+            <div class="d-flex justify-content-around section3__blocks">
+                <div class="text-center px-4 text-light block">
+                    <p> “The team perfectly fit the specialized skill set required. They focused on the most essential
+                        features helping us launch the platform eight months faster than planned.”</p>
+                    <h5>Kady Baker</h5>
+                    <p>Product Manager at Bookmark</p>
+                </div>
+                <div class="text-center px-4 text-light block">
+                    <p> “The team perfectly fit the specialized skill set required. They focused on the most essential
+                        features helping us launch the platform eight months faster than planned.”</p>
+                    <h5>Kady Baker</h5>
+                    <p>Product Manager at Bookmark</p>
+                </div>
+                <div class="text-center px-4 text-light block">
+                    <p> “The team perfectly fit the specialized skill set required. They focused on the most essential
+                        features helping us launch the platform eight months faster than planned.”</p>
+                    <h5>Kady Baker</h5>
+                    <p>Product Manager at Bookmark</p>
+                </div>
             </div>
-            <div class="text-center px-4 text-light block">
-                <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-                <h5>Kady Baker</h5>
-                <p>Product Manager at Bookmark</p>
-            </div>
-            <div class="text-center px-4 text-light block">
-                <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-                <h5>Kady Baker</h5>
-                <p>Product Manager at Bookmark</p>
-            </div>
+
         </div>
-        
+
     </section>
 
     <!-- Section_4 -->
@@ -129,9 +153,10 @@
                         <li><a class="text-decoration-none text-light" href="#">about</a></li>
                     </ul>
                 </div>
-    
-                <ul class="foot__list list-unstyled text-light ps-5 ms-5 mb-0 d-flex flex-column justify-content-between">
-                    <li>987  Hillcrest Lane</li>
+
+                <ul
+                    class="foot__list list-unstyled text-light ps-5 ms-5 mb-0 d-flex flex-column justify-content-between">
+                    <li>987 Hillcrest Lane</li>
                     <li>Irvine, CA</li>
                     <li>California 92714</li>
                     <li>Call Us : 949-833-7432</li>
@@ -144,7 +169,7 @@
                     <img class="ps-2" src="./img/ppp.svg" alt="#">
                     <img class="ps-2" src="./img/twitter.svg" alt="#">
                 </div>
-                <p class="text-light mb-0">Copyright 2020. All Rights Reserved</p>
+                <p class="text-light text-end mb-0">Copyright 2020. All Rights Reserved</p>
             </div>
 
         </div>
@@ -152,4 +177,5 @@
     </footer>
 
 </body>
+
 </html>

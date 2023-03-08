@@ -1,7 +1,6 @@
 .section2_P1{
     background-color: #004047;
-    margin-top: 70px;
-    padding-bottom: 130px;
+    padding-bottom: 100px;
     position: relative;
 
     &::before{
@@ -26,6 +25,10 @@
         height: 210px;
         background-color: #012F34;
 
+        &__icons{
+            padding-bottom: 6px;
+        }
+
         &__plus{
             position: relative;
             content: "";
@@ -33,7 +36,7 @@
             height: 40px;
             border-radius: 50%;
             background-color: #F67E7E;
-            bottom: -20px;
+            bottom: -19px;
             left: 155px;
 
             &::before{
@@ -42,8 +45,8 @@
                 width: 16px;
                 height: 3px;
                 background-color:#012F34;
-                left: 11.5px;
-                top: 18px;
+                left: 12px;
+                top: 18.5px;
             }
 
             &::after{
@@ -53,8 +56,8 @@
                 height: 3px;
                 transform: rotate(90deg);
                 background-color:#012F34;
-                left: 11.5px;
-                top: 18px;
+                left: 12px;
+                top: 18.5px;
             }
 
             &:hover{
@@ -67,6 +70,55 @@
                 &::after{
                     transform: rotate(-45deg);
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .cards{
+        justify-content: space-around!important;
+    }
+}
+
+@media only screen and (max-width: 991.5px){
+
+    .cards{
+        justify-content: space-around!important;
+
+        &__card{
+            width: 250px;
+            height: 210px;
+
+            &__plus{
+                bottom: -25px;
+                left: 105px;
+            }
+
+            & >p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 590px){
+
+    .cards{
+        justify-content: space-around!important;
+
+        &__card{
+            width: 350px;
+            height: 210px;
+
+            &__plus{
+                bottom: -20px;
+                left: 155px;
+            }
+
+            & >p{
+                font-size: 16px;
             }
         }
     }
