@@ -54,15 +54,36 @@
         .block{
     
             &:nth-child(1) >h5{
-                @include sec3PsElem(url(/img/Kady.png), 130px, -195px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 130px;
+                }
+                &::after{
+                    top: -195px;
+                    left: 130px;
+                }
             }
     
             &:nth-child(2) >h5{
-                @include sec3PsElem(url(/img/Aiysha.png), 130px, -195px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 130px;
+                }
+                &::after{
+                    top: -195px;
+                    left: 130px;
+                }
             }
     
             &:nth-child(3) >h5{
-                @include sec3PsElem(url(/img/Arthur.png), 130px, -195px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 130px;
+                }
+                &::after{
+                    top: -195px;
+                    left: 130px;
+                }
             }
         }
     }
@@ -81,15 +102,36 @@
         .block{
     
             &:nth-child(1) >h5{
-                @include sec3PsElem(url(/img/Kady.png), 100px, -220px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 100px;
+                }
+                &::after{
+                    top: -220px;
+                    left: 100px;
+                }
             }
     
             &:nth-child(2) >h5{
-                @include sec3PsElem(url(/img/Aiysha.png), 100px, -220px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 100px;
+                }
+                &::after{
+                    top: -220px;
+                    left: 100px;
+                }
             }
     
             &:nth-child(3) >h5{
-                @include sec3PsElem(url(/img/Arthur.png), 100px, -220px, -115px);
+                &::before{
+                    bottom: -115px;
+                    left: 100px;
+                }
+                &::after{
+                    top: -220px;
+                    left: 100px;
+                }
             }
         }
     }
@@ -102,15 +144,36 @@
         .block{
     
             &:nth-child(1) >h5{
-                @include sec3PsElem(url(/img/Kady.png), 55px, -270px, -140px);
+                &::before{
+                    bottom: -140px;
+                    left: 55px;
+                }
+                &::after{
+                    top: -270px;
+                    left: 55px;
+                }
             }
     
             &:nth-child(2) >h5{
-                @include sec3PsElem(url(/img/Aiysha.png), 55px, -270px, -140px);
+                &::before{
+                    bottom: -140px;
+                    left: 55px;
+                }
+                &::after{
+                    top: -270px;
+                    left: 55px;
+                }
             }
     
             &:nth-child(3) >h5{
-                @include sec3PsElem(url(/img/Arthur.png), 55px, -270px, -140px);
+                &::before{
+                    bottom: -140px;
+                    left: 55px;
+                }
+                &::after{
+                    top: -270px;
+                    left: 55px;
+                }
             }
         }
     }

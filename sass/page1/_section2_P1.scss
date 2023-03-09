@@ -26,7 +26,14 @@
         background-color: #012F34;
 
         &__icons{
-            padding-bottom: 6px;
+            
+            & > a{
+                color: white;
+
+                &:hover{
+                    color: #F67E7E;
+                }
+            }
         }
 
         &__plus{
@@ -40,24 +47,12 @@
             left: 155px;
 
             &::before{
-                position: absolute;
-                content: "";
-                width: 16px;
-                height: 3px;
-                background-color:#012F34;
-                left: 12px;
-                top: 18.5px;
+                @include circlePsElement;
             }
 
             &::after{
-                position: absolute;
-                content: "";
-                width: 16px;
-                height: 3px;
+                @include circlePsElement;
                 transform: rotate(90deg);
-                background-color:#012F34;
-                left: 12px;
-                top: 18.5px;
             }
 
             &:hover{
@@ -84,42 +79,11 @@
 
 @media only screen and (max-width: 991.5px){
 
-    .cards{
-        justify-content: space-around!important;
+    @include cards(250px, -25px, 105px, 12px, 16.5px);
 
-        &__card{
-            width: 250px;
-            height: 210px;
-
-            &__plus{
-                bottom: -25px;
-                left: 105px;
-            }
-
-            & >p{
-                font-size: 12px;
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 590px){
 
-    .cards{
-        justify-content: space-around!important;
-
-        &__card{
-            width: 350px;
-            height: 210px;
-
-            &__plus{
-                bottom: -20px;
-                left: 155px;
-            }
-
-            & >p{
-                font-size: 16px;
-            }
-        }
-    }
+    @include cards(350px, -21px, 155px, 16px, 23.5px);
 }

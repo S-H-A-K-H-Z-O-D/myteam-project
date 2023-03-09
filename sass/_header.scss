@@ -19,7 +19,6 @@
 
 .navMenu{
     width: 100%;
-    height: 100%;
     margin-left: 0;
 
     &__block{
@@ -28,28 +27,6 @@
            
         .head-btn{
             margin-left: auto;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px){
-
-    .nav-item:hover{
-        color: #F67E7E!important;
-    }
-    
-    .head-btn:hover{
-        background-color: white;
-    
-        & > p{
-            color: black;
-        }
-    }
-    
-    .head-btn:active{
-    
-        & > p{
-            color: white;
         }
     }
 }
@@ -67,24 +44,16 @@
         &__btn{
             width: 20px;
             height: 2px;
-            background-color: black;
+            background-color: white;
             position: relative;
 
             &::before{
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 2px;
-                background-color: black;
+                @include headPs;
                 top: -8px;
             }
 
             &::after{
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 2px;
-                background-color: black;
+                @include headPs;
                 bottom: -8px;
             }
         }

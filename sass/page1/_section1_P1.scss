@@ -5,11 +5,8 @@
 
     &::before{
         content: "";
-        position: absolute;
-        width: 80px;
-        height: 160px;
         background: url(/img/psElement7.png) no-repeat;
-        background-size: 100% 100%;
+        @include pseudoElement(80px, 160px);
         bottom: 0px;
         right: 0px;
     }
@@ -40,12 +37,9 @@
 @media only screen and (max-width: 768px){
 
     .section1_P1{
-        margin-top: 100px!important;
-        position: relative;
         margin: 0 auto;
 
         &__title{
-            width: 500px;
             text-align: center;
         }
         
@@ -67,25 +61,13 @@
                 }
             } 
         }
-    
-        &::before{
-            content: "";
-            position: absolute;
-            width: 80px;
-            height: 160px;
-            background: url(/img/psElement7.png) no-repeat;
-            background-size: 100% 100%;
-            bottom: 0px;
-            right: 0px;
-        }
     }
 }
 
 @media only screen and (max-width: 685px){
 
     .section1_P1{
-        margin-top: 100px!important;
-        position: relative;
+        margin-top: 30px!important;
         padding-bottom: 120px;
     
         &::before{
