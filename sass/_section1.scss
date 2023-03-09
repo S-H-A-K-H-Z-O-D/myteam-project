@@ -127,10 +127,6 @@
             width: 500px;
             font-family: livvic-700;
             text-align: start;
-    
-            & > span{
-                color: #F67E7E;
-            }
         }
     }
 }
@@ -173,20 +169,31 @@
 @media only screen and (max-width: 600px){
 
     .section1{
+
+        &__block{
+            margin-bottom: 0!important;
+
+            .description >p{
+                height: 96px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
     
         &__title{
             width: 270px;
             position: relative;
 
             &::before{
+                display: block;
                 content: "";
                 position: absolute;
-                width: 250px;
-                height: 72px;
+                width: 260px;
+                height: 80px;
                 background: url(/img/psiedoElement2.png) no-repeat;
                 background-size: 100% 100%;
-                bottom: -180px;
-                right: 15px;
+                bottom: -252px;
+                left: 10px;
             }
         }
 
@@ -196,7 +203,11 @@
 
         & >div{
             position: relative;
-    
+
+            &::after{
+                display: none;
+            }
+
             &::before{
                 display: none;
             }

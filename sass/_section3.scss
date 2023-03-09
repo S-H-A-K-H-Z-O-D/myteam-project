@@ -196,32 +196,47 @@
         .block{
     
             &:nth-child(1) >h5{
-
-                &::before{
-                    bottom: -120px;
-                }
                 &::after{
                     top: -173px;
                 }
             }
     
             &:nth-child(2) >h5{
-
-                &::before{
-                    bottom: -120px;
-                }
                 &::after{
                     top: -173px;
                 }
             }
     
             &:nth-child(3) >h5{
-
-                &::before{
-                    bottom: -120px;
-                }
                 &::after{
                     top: -173px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 417.5px){
+
+    .section3{
+    
+        .block{
+    
+            &:nth-child(1) >h5{
+                &::after{
+                    top: -197px;
+                }
+            }
+    
+            &:nth-child(2) >h5{
+                &::after{
+                    top: -197px;
+                }
+            }
+    
+            &:nth-child(3) >h5{
+                &::after{
+                    top: -197px;
                 }
             }
         }

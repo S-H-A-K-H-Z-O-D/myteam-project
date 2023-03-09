@@ -20,6 +20,14 @@ footer{
 
     &__icons{
         height: 100px;
+
+        .svgPic{
+            color: white;
+
+            &:hover{
+                color: #F67E7E;
+            }
+        }
     }
 
     &__list{
@@ -65,8 +73,10 @@ footer{
             height: 70px;
             margin-bottom: 20px;
 
-            & >img{
-                height: 25px;
+            & >a{
+                & >img{
+                    height: 25px;
+                }
             }
         }
 
